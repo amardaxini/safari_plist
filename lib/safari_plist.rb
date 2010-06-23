@@ -18,7 +18,6 @@ class SafariPlist
        result = `#{plutil_path} -i #{file_name}`
        doc = Hpricot.parse(result)  
        @histories = self.process_history(doc)
-       puts "hello"
      else
         puts "Please enter file name"
         return -1
