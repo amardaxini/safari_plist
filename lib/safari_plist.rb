@@ -48,7 +48,7 @@ class SafariPlist
           no_of_visit = visit_count.innerText 
         end
       end
-      safari_history << Plist.new(browsing_url,access_time,no_of_visit,title)
+      safari_history << SafariPlist.new(browsing_url,access_time,no_of_visit,title)
     end
     safari_history
   end
