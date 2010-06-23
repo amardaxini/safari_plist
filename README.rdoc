@@ -1,17 +1,20 @@
-= safari_plist
+= safari-plist
 
-Description goes here.
+safari-plist is a gem that reads safari histories on provideing safari *.plist file
 
-== Note on Patches/Pull Requests
- 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
 
+== Requirement
+* It requires plutil binary.
+* It requires Hpricot gem 
+
+==Example
+SafariPlist.get_history(*.plist,[plutil_path])
+
+It rturns array of object containing url,acces_time,visit_count
+
+ * plutil_path is optional if it is present in system path
+ * plutil can be installed via apt-get or yum
+  
 == Copyright
 
 Copyright (c) 2010 amardaxini. See LICENSE for details.
