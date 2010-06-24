@@ -4,7 +4,7 @@ require 'hpricot'
 class SafariPlist
   attr_reader :url,:access_time,:visit_count,:title
   
-  def initialize(url="",acess_time="",visit_count="",title="")
+  def initialize(url="",access_time="",visit_count="",title="")
     @url =url
     @access_time = (Time.utc(2001,"jan",1,0,0,0)+access_time.to_f).to_s
     @visit_count = visit_count
